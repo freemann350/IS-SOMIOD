@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOMIOD", "SOMIOD\SOMIOD.csproj", "{A240B410-D0B9-43D9-84B7-26285E0F4F32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarrierControl", "BarrierControl\BarrierControl.csproj", "{CA72BF80-49F8-4D06-A9CB-F2FED9B2ED7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barrier", "Barrier\Barrier.csproj", "{5CDD4700-4A04-4ECF-AABB-AC2C7AF27D2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A240B410-D0B9-43D9-84B7-26285E0F4F32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A240B410-D0B9-43D9-84B7-26285E0F4F32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A240B410-D0B9-43D9-84B7-26285E0F4F32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A240B410-D0B9-43D9-84B7-26285E0F4F32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA72BF80-49F8-4D06-A9CB-F2FED9B2ED7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA72BF80-49F8-4D06-A9CB-F2FED9B2ED7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA72BF80-49F8-4D06-A9CB-F2FED9B2ED7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA72BF80-49F8-4D06-A9CB-F2FED9B2ED7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CDD4700-4A04-4ECF-AABB-AC2C7AF27D2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CDD4700-4A04-4ECF-AABB-AC2C7AF27D2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CDD4700-4A04-4ECF-AABB-AC2C7AF27D2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CDD4700-4A04-4ECF-AABB-AC2C7AF27D2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90763BC3-12C2-48BF-8ACE-4CD770A8CCB1}
+	EndGlobalSection
+EndGlobal

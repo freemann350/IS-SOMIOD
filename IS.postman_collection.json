@@ -1,0 +1,728 @@
+{
+	"info": {
+		"_postman_id": "e9421d8e-46b3-41d1-92d4-bdb32389237f",
+		"name": "IS Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29890042"
+	},
+	"item": [
+		{
+			"name": "Application endpoints",
+			"item": [
+				{
+					"name": "Create application",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version='1.0' encoding='utf-8'?>\r\n<Application>\r\n    <name>Sample Application</name>\r\n</Application>"
+						},
+						"url": {
+							"raw": "http://localhost:2245/api/somiod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get single application",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:2245/api/somiod/App1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod",
+								"App1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all applications",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:2245/api/somiod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all applications (discover)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "somiod-discover",
+								"value": "application",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:2245/api/somiod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit application",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version='1.0' encoding='utf-8'?>\r\n<Application>\r\n    <name>Sample Application2</name>\r\n</Application>"
+						},
+						"url": {
+							"raw": "http://localhost:2245/api/somiod/App4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod",
+								"App4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete application",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2245/api/somiod/App15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod",
+								"App15"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Container endpoints",
+			"item": [
+				{
+					"name": "Create Container",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version='1.0' encoding='utf-8'?>\r\n<Container>\r\n    <name>SampleContainer</name>\r\n</Container>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2245/api/somiod/App1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod",
+								"App1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get single container",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:2245/api/somiod/App1/ContainerA",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod",
+								"App1",
+								"ContainerA"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all containers of application",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:2245/api/somiod/App1/containers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod",
+								"App1",
+								"containers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all containers of application (discover)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "somiod-discover",
+								"value": "container",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:2245/api/somiod/App1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod",
+								"App1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit container",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version='1.0' encoding='utf-8'?>\r\n<Container>\r\n    <name>SampleContainerV2</name>\r\n</Container>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2245/api/somiod/App1/ContainerA",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod",
+								"App1",
+								"ContainerA"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Container",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Request>\n      <res_type>container</res_type>\n      <xmlData>\n          <Container>\n              <name>ContainerXYZW</name>      \n          </Container>\n      </xmlData>\n  </Request>"
+						},
+						"url": {
+							"raw": "http://localhost:2245/api/somiod/App1/ContainerA",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod",
+								"App1",
+								"ContainerA"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Data endpoints",
+			"item": [
+				{
+					"name": "Create data",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Request>\n    <res_type>data</res_type>\n    <xmlData>\n        <ContainerData>\n            <name>Container123</name>\n            <content><![CDATA[<root><item>Bruh</item></root>]]></content>\n            <creation_dt>2023-12-31T00:00:00Z</creation_dt>\n            <res_type>data</res_type>\n        </ContainerData>\n    </xmlData>\n</Request>"
+						},
+						"url": {
+							"raw": "http://localhost:2245/api/somiod/App1/ContainerA",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod",
+								"App1",
+								"ContainerA"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get single data",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:2245/api/somiod/App1/ContainerA/data/ContainerA_Data",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod",
+								"App1",
+								"ContainerA",
+								"data",
+								"ContainerA_Data"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get data",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:2245/api/somiod/App1/ContainerA/data",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod",
+								"App1",
+								"ContainerA",
+								"data"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get  data (discover)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "somiod-discover",
+								"value": "data",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:2245/api/somiod/App1/ContainerA",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod",
+								"App1",
+								"ContainerA"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Data",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Request>\n    <res_type>data</res_type>\n    <xmlData>\n        <ContainerData>\n            <name>ContainerXYZW</name>      \n        </ContainerData>\n    </xmlData>\n</Request>"
+						},
+						"url": {
+							"raw": "http://localhost:2245/api/somiod/App1/ContainerA",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod",
+								"App1",
+								"ContainerA"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Data (POST Notify)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n  <Request>\n      <res_type>data</res_type>\n      <xmlData>\n          <ContainerData>\n              <name>CreateAPP91121121</name>\n              <content><![CDATA[<Application><Id>1</Id><name>APPGandaFixe2</name><creation_dt></creation_dt></Application>]]></content>\n              <creation_dt>2023-12-31T00:00:00Z</creation_dt>\n          </ContainerData>\n      </xmlData>\n  </Request>"
+						},
+						"url": {
+							"raw": "http://localhost:2245/api/somiod/SampleApplication2/ContainerD",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod",
+								"SampleApplication2",
+								"ContainerD"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subscription endpoints",
+			"item": [
+				{
+					"name": "Create subscription",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Request>\n    <res_type>data</res_type>\n    <xmlData>\n        <ContainerData>\n            <name>Container12346</name>\n            <content><![CDATA[<root><item>Bruh</item></root>]]></content>\n        </ContainerData>\n    </xmlData>\n</Request>"
+						},
+						"url": {
+							"raw": "http://localhost:2245/api/somiod/App1/ContainerA",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod",
+								"App1",
+								"ContainerA"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get single subscription",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:2245/api/somiod/App1/ContainerA/subscriptions/ContainerSub1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod",
+								"App1",
+								"ContainerA",
+								"subscriptions",
+								"ContainerSub1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get subscriptions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:2245/api/somiod/App1/ContainerA/subscriptions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod",
+								"App1",
+								"ContainerA",
+								"subscriptions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get subscriptions (discover)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "somiod-discover",
+								"value": "subscriptions",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:2245/api/somiod/App1/ContainerA/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod",
+								"App1",
+								"ContainerA",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Subscription",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Request>\n    <res_type>subscription</res_type>\n    <xmlData>\n        <ContainerSubscriptions>\n            <name>subscriptionTest</name>\n        </ContainerSubscriptions>\n    </xmlData>\n  </Request>"
+						},
+						"url": {
+							"raw": "http://localhost:2245/api/somiod/App1/ContainerA",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2245",
+							"path": [
+								"api",
+								"somiod",
+								"App1",
+								"ContainerA"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
